@@ -1,0 +1,36 @@
+{
+    "name": "chrome-release-notes",
+    "version": "0.1.0",
+    "description": "In-app release notes for Chrome extensions — version diff display, feature highlights, what's new UI, and dismiss tracking for MV3.",
+    "author": "Zovo <hello@zovo.one>",
+    "license": "MIT",
+    "keywords": [
+        "chrome-extension",
+        "release-notes",
+        "whats-new",
+        "version",
+        "changelog",
+        "ui",
+        "manifest-v3",
+        "browser-extension"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theluckystrike/chrome-release-notes.git"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.260",
+        "typescript": "^5.3.3"
+    }
+}
